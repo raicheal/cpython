@@ -1,4 +1,41 @@
-.. highlight:: sh
+Log Name:      Setup
+Source:        Microsoft-Windows-Servicing
+Date:          2024-11-02 4:34:42 PM
+Event ID:      10
+Task Category: (1)
+Level:         Information
+Keywords:      
+User:          SYSTEM
+Computer:      curseee
+Description:
+Selectable update Microsoft-RemoteDesktopConnection of package Microsoft-Windows-TS-OptionalComponents was successfully turned off.
+Event Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Servicing" Guid="{bd12f3b8-fc40-4a61-a307-b7a013a069c1}" />
+    <EventID>10</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-11-02T20:34:42.1020271Z" />
+    <EventRecordID>5</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="3088" ThreadID="3236" />
+    <Channel>Setup</Channel>
+    <Computer>curseee</Computer>
+    <Security UserID="S-1-5-18" />
+  </System>
+  <UserData>
+    <CbsUpdateChangeState xmlns="http://manifests.microsoft.com/win/2004/08/windows/setup_provider">
+      <UpdateName>Microsoft-RemoteDesktopConnection</UpdateName>
+      <PackageIdentifier>Microsoft-Windows-TS-OptionalComponents</PackageIdentifier>
+      <ErrorCode>0x0</ErrorCode>
+      <Client>DISM Package Manager Provider</Client>
+    </CbsUpdateChangeState>
+  </UserData>
+</Event>.. highlight:: sh
 
 .. ATTENTION: You probably should update Misc/python.man, too, if you modify
    this file.
